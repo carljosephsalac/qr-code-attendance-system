@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex items-center justify-center h-screen p-3 bg-gray-50">
+        <!-- Modal content -->
+        <div class="relative p-5 text-center bg-white rounded-lg shadow-md dark:bg-gray-800 sm:p-5 min-w-80 w">
+            <div
+                class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900 p-2 flex items-center justify-center mx-auto mb-3.5">
+                <svg aria-hidden="true" class="w-8 h-8 text-green-500 dark:text-green-400" fill="currentColor"
+                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                <span class="sr-only">Success</span>
+            </div>
+            <p class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">{{ $message }}</p>
+            <a href="{{ route('login') }}"
+                class="px-4 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">
+                Show scan history
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
